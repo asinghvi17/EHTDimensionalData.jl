@@ -4,11 +4,11 @@
 [![Coverage](https://codecov.io/gh/EHTJulia/EHTDimensionalData.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/EHTJulia/EHTDimensionalData.jl)
 [![Code Style: Blue](https://img.shields.io/badge/code%20style-blue-4495d1.svg)](https://github.com/invenia/BlueStyle)
 
-This package is an extension of [DimensionalData.jl](https://github.com/rafaqz/DimensionalData.jl) which provides an intuitive, self-descriptive ND-labeld data structures for Julia.
+This package is an extension of [DimensionalData.jl](https://github.com/rafaqz/DimensionalData.jl) which provides intuitive, self-descriptive, ND-labeled data structures for Julia.
 This package works as a higher layer of DimensionalData.jl by reexporting its ecosystem through [Reexport.jl](https://github.com/simonster/Reexport.jl) with a set of custom functions for DimArray and DimStack data types including potential overwrites of some methods.
 
 ## Installation
-Assuming that you already have Julia correctly installed, it suffices to import EHTUtils.jl in the standard way:
+Assuming that you already have Julia correctly installed, it suffices to import EHTDimensionalData.jl in the standard way:
 
 ```julia
 using Pkg
@@ -17,17 +17,17 @@ Pkg.add("EHTDimensionalData")
 
 
 ## Usage
-As EHTDimensionalData.jl will reexport all features exporeted from DimesinalData.jl along with custom mehods, you will need to import only EHTDimensionalData.jl.
+As EHTDimensionalData.jl will reexport all features exported from DimesionalData.jl along with custom methods, you will only need to import EHTDimensionalData.jl.
 
 ```julia
 using EHTDimensionalData
 ```
 
-If you need to import both DimensionalData.jl and EHTDimensionalData.jl for some reasons, please `import` or using only specific functions to avoid conflicts.
+If you need to import both DimensionalData.jl and EHTDimensionalData.jl for some reason, please `import` or `using` only specific functions to avoid conflicts.
 
 
 ## Acknowledgements
-The development of this package has been finantially supported by the following programs.
+The development of this package has been financially supported by the following programs.
 - [AST-2107681](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2107681), National Science Foundation, USA: v0.1.1 - present
 - [AST-2034306](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2034306), National Science Foundation, USA: v0.1.1 - present
 - [OMA-2029670](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2029670), National Science Foundation, USA: v0.1.1 - present
